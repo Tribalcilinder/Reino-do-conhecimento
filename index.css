@@ -91,6 +91,19 @@ footer {
     bottom: 0; /* Posiciona o rodapé na parte inferior da página */
 }
 
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: contain; /* Contém a imagem dentro da área de visualização em telas menores */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-size: 100%; /* Ajusta a imagem para cobrir 100% da largura da tela em dispositivos móveis */
+    }
+}
+
+
 /* Estilo responsivo para telas menores */
 @media screen and (max-width: 600px) {
     header {
