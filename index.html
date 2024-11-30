@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reino do Conhecimento</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Estilo do ícone do menu (hamburger) */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 4px;
+            background-color: #fff;
+            margin: 4px;
+        }
+
+        /* Esconde os links de navegação no modo mobile */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .nav-links a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: none;
+        }
+
+        /* Mostra os links quando o menu está aberto */
+        .nav-links.active a {
+            display: block;
+        }
+
+        /* Estilo responsivo para telas menores */
+        @media screen and (max-width: 600px) {
+            .menu-icon {
+                display: flex;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            nav.active a {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Reino do Conhecimento</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
-    <nav>
+    <nav class="nav-links">
         <a href="#">Home</a>
         <a href="#">Classe</a>
         <a href="#">Raça</a>
@@ -21,27 +80,32 @@
         <a href="#">Bugigangas</a>
     </nav>
     <div class="container">
-        <div class="row">
-            </div> <div class="main"> 
-                <div class="half">
-                    <a href="./arquivos/dd-5e-livro-do-jogador-fundo-branco.pdf" download>
-                        <img src="./img/baixar_pdf.png" alt="Dungeons & Dragons 5º Edição" width="200">
-                    </a>
-                    <p class="download-text">Livro do jogador</p>
-                </div>
-                
+        <div class="row"></div>
+        <div class="main">
             <div class="half">
-                <a href="./arquivos/dd-5e-ficha-de-personagem-completavel.pdf" download>
-                    <img src="./img/ficha.jpg" alt="Dungeons & Dragons 5º Edição" width="100">
+                <a href="arquivos/dd-5e-livro-do-jogador-fundo-branco.pdf" download>
+                    <img src="img/baixar_pdf.png" alt="Dungeons & Dragons 5º Edição" width="200">
+                </a>
+                <p class="download-text">Livro do jogador</p>
+            </div>
+            <div class="half">
+                <a href="arquivos/dd-5e-ficha-de-personagem-completavel.pdf" download>
+                    <img src="img/ficha.jpg" alt="Dungeons & Dragons 5º Edição" width="100">
                 </a>
                 <p class="download-text">Ficha do Personagem</p>
             </div>
-      
-      
         </div>
     </div>
     <footer>
         <p>© 2024 Reino do Conhecimento</p>
     </footer>
+
+    <!-- JavaScript para alternar o menu -->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
