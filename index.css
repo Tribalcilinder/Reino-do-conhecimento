@@ -4,7 +4,7 @@ body {
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o preenchimento padrão */
     min-height: 100vh; /* Garante que o body cubra toda a altura da janela */
-    background-image: url('./img/bg1.png'); /* Define a imagem de fundo */
+    background-image: url('img/bg1.png'); /* Define a imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
