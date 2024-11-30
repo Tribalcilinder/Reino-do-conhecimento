@@ -26,6 +26,8 @@ nav {
     justify-content: center; /* Centraliza os links horizontalmente */
     background-color: #333; /* Cor de fundo da navegação */
     flex-wrap: wrap; /* Permite que os links quebrem linha em telas menores */
+    width: 100%; /* Garante que a navegação ocupe 100% da largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estilo dos links de navegação */
@@ -34,6 +36,7 @@ nav a {
     padding: 14px 20px; /* Espaçamento interno dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
     text-align: center; /* Centraliza o texto dos links */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estilo dos links de navegação ao passar o mouse */
@@ -84,6 +87,7 @@ footer {
     padding: 10px 0; /* Espaçamento interno no rodapé */
     position: fixed; /* Fixa o rodapé na parte inferior da página */
     width: 100%; /* O rodapé ocupa toda a largura da página */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
     bottom: 0; /* Posiciona o rodapé na parte inferior da página */
 }
 
