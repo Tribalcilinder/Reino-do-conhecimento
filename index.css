@@ -5,7 +5,7 @@ body {
     padding: 0; /* Remove o preenchimento padrão */
     min-height: 100vh; /* Garante que o body cubra toda a altura da janela */
     background-image: url('./img/bg1.PNG'); /* Define a imagem de fundo */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */ 
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
 }
@@ -16,6 +16,8 @@ header {
     color: #000000; /* Cor do texto do cabeçalho */
     padding: 15px; /* Espaçamento interno no cabeçalho */
     text-align: center; /* Centraliza o texto no cabeçalho */
+    width: 100%; /* Garante que o cabeçalho ocupe 100% da largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estilo da navegação */
@@ -23,6 +25,7 @@ nav {
     display: flex; /* Usa flexbox para o layout dos links */
     justify-content: center; /* Centraliza os links horizontalmente */
     background-color: #333; /* Cor de fundo da navegação */
+    flex-wrap: wrap; /* Permite que os links quebrem linha em telas menores */
 }
 
 /* Estilo dos links de navegação */
@@ -65,9 +68,9 @@ nav a:hover {
 /* Estilo das metades */
 .half {
     display: flex; 
-    flex-direction: column; /* Alinha itens em coluna */ 
-    align-items: center; /* Centraliza itens horizontalmente */ 
-    justify-content: center; /* Centraliza itens verticalmente */ 
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    justify-content: center; /* Centraliza itens verticalmente */
     flex: 50%; /* Cada metade ocupa 50% da largura */
     padding: 10px; /* Espaçamento interno das metades */
     color: white; /* Cor do texto dentro das metades */
@@ -86,6 +89,12 @@ footer {
 
 /* Estilo responsivo para telas menores */
 @media screen and (max-width: 600px) {
+    header {
+        padding: 10px; /* Ajusta o espaçamento interno no cabeçalho em telas menores */
+    }
+    nav {
+        flex-direction: column; /* Alinha os links de navegação em coluna */
+    }
     nav a {
         display: block; /* Links de navegação em bloco */
         text-align: center; /* Centraliza o texto dos links */
