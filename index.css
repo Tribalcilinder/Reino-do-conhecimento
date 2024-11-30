@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
 
-/* Estilo global para o corpo da página */
 body {
     font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
-    min-height: 100vh; /* Garante que o body cubra toda a altura da janela */
-    background-image: url('img/bg1.png'); /* Define a imagem de fundo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('img/bg1.PNG'); /* Caminho da imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
 
 /* Estilo do cabeçalho */
