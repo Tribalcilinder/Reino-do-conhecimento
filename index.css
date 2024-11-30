@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
+
 /* Estilo global para o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+    font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o preenchimento padrão */
     min-height: 100vh; /* Garante que o body cubra toda a altura da janela */
