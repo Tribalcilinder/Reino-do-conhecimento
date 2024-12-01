@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url('img/bg1.PNG'); /* Caminho da imagem de fundo */
+    background-image: url('img/bg1.png'); /* Caminho da imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
