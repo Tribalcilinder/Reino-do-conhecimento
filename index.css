@@ -10,6 +10,8 @@ body {
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+  width: 100%;
+    height: 100%;
 }
 
 /* Estilo do cabeçalho */
