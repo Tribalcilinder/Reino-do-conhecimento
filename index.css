@@ -80,7 +80,7 @@ nav a:hover {
     justify-content: center; /* Centraliza itens verticalmente */
     flex: 50%; /* Cada metade ocupa 50% da largura */
     padding: 10px; /* Espaçamento interno das metades */
-    color: black; /* Cor do texto dentro das metades */
+    color: white; /* Cor do texto dentro das metades */
 }
 
 /* Estilo do rodapé */
