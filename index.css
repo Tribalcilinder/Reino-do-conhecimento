@@ -1,26 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
-@media screen and (max-width: 600px) {
-    .column, .half {
-        flex: 100%; /* Cada coluna/metade ocupa 100% da largura */
-    }
-}
-
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    position: static;
     font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
     background-image: url(img/bg1.png); /* Caminho da imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    flex: 1; /* Faz o corpo ocupar o espaço disponível */
     display: flex;
     flex-direction: column; /* Faz o layout flexível em coluna */
 }
@@ -57,7 +52,8 @@ nav a:hover {
 }
 
 .container {
-    padding: 20px 0; /* Reduz o espaçamento interno do container */
+    flex: 1; /* Faz o container principal ocupar o espaço disponível */
+    padding: 20px; /* Espaçamento interno do container */
 }
 
 .row {
@@ -69,12 +65,12 @@ nav a:hover {
 
 .column {
     flex: 50%; /* Cada coluna ocupa 50% da largura */
-    padding: 10px; /* Espaçamento interno das colunas */
+    padding: 15px; /* Espaçamento interno das colunas */
     align-self: flex-start; /* Garante que as colunas estejam alinhadas ao topo */
 }
 
 .main {
-    display: flex-start; /* Usa flexbox para o layout das metades */
+    display: flex; /* Usa flexbox para o layout das metades */
     width: 100%; /* Garante que o container principal ocupe toda a largura */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: flex-start; /* Alinha verticalmente ao topo */
@@ -84,11 +80,45 @@ nav a:hover {
     display: flex;
     flex-direction: column; /* Alinha itens em coluna */
     align-items: center; /* Centraliza itens horizontalmente */
-    justify-content: center; /* Centraliza itens verticalmente */
+    justify-content: flex-start; /* Alinha os itens ao início */
     flex: 50%; /* Cada metade ocupa 50% da largura */
     padding: 10px; /* Espaçamento interno das metades */
     color: white; /* Cor do texto dentro das metades */
 }
 
 footer {
-    background
+    background-color: #cc9c53; /* Cor de fundo do rodapé */
+    color: #000000; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Espaçamento interno no rodapé */
+    position: relative; /* Define a posição relativa */
+    width: 100%; /* O rodapé ocupa toda a largura da página */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    margin-top: auto; /* Empurra o rodapé para a parte inferior da página */
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: contain; /* Ajusta a imagem para conter dentro da área de visualização */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área visível */
+        background-position: center; /* Centraliza a imagem */
+    }
+    header {
+        padding: 10px; /* Ajusta o espaçamento interno no cabeçalho em telas menores */
+    }
+    nav {
+        flex-direction: column; /* Alinha os links de navegação em coluna */
+    }
+    nav a {
+        display: block; /* Links de navegação em bloco */
+        text-align: center; /* Centraliza o texto dos links */
+    }
+    .column, .half {
+        flex: 100%; /* Cada coluna/metade ocupa 100% da largura */
+    }
+}
