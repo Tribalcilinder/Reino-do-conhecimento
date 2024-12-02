@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
+@media screen and (max-width: 600px) {
+    .column, .half {
+        flex: 100%; /* Cada coluna/metade ocupa 100% da largura */
+    }
+}
+
 
 html, body {
     height: 100%;
@@ -63,12 +69,12 @@ nav a:hover {
 
 .column {
     flex: 50%; /* Cada coluna ocupa 50% da largura */
-    padding: 15px; /* Espaçamento interno das colunas */
+    padding: 10px; /* Espaçamento interno das colunas */
     align-self: flex-start; /* Garante que as colunas estejam alinhadas ao topo */
 }
 
 .main {
-    display: flex; /* Usa flexbox para o layout das metades */
+    display: flex-start; /* Usa flexbox para o layout das metades */
     width: 100%; /* Garante que o container principal ocupe toda a largura */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: flex-start; /* Alinha verticalmente ao topo */
