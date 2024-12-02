@@ -50,7 +50,8 @@ nav a:hover {
 
 /* Estilo do container principal */
 .container{
-    justify-content: top;
+    display: flex;
+    align-items: flex-start;
     padding: 20px; /* Espaçamento interno do container */
 }
 
@@ -63,6 +64,7 @@ nav a:hover {
 
 /* Estilo das colunas */
 .column {
+    
     flex: 50%; /* Cada coluna ocupa 50% da largura */
     padding: 15px; /* Espaçamento interno das colunas */
 }
