@@ -7,6 +7,7 @@ html, body {
 }
 
 body {
+    position: static;
     font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
     min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
     background-image: url(img/bg1.png); /* Caminho da imagem de fundo */
@@ -50,11 +51,7 @@ nav a:hover {
 }
 
 .container {
-    flex: 1; /* Permite que o container principal ocupe o espaço disponível */
     padding: 20px; /* Espaçamento interno do container */
-    display: flex;
-    flex-direction: column; /* Faz o layout flexível em coluna */
-    align-items: flex-start; /* Alinha os itens ao início */
 }
 
 .row {
