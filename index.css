@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
 
 body {
+    position: fixed;
     font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
     margin: 0;
     padding: 0;
