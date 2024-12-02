@@ -51,6 +51,7 @@ nav a:hover {
     color: black; /* Cor do texto ao passar o mouse */
 }
 
+
 .container {
     flex: 1; /* Faz o container principal ocupar o espaço disponível */
     padding: 20px; /* Espaçamento interno do container */
