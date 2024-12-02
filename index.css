@@ -57,6 +57,10 @@ nav a:hover {
     padding: 20px; /* Espaçamento interno do container */
 }
 
+.download-text{
+    text-align: center;
+}
+
 .row {
     display: flex; /* Usa flexbox para o layout das colunas */
     flex-wrap: wrap; /* Permite que as colunas quebrem linha se necessário */
