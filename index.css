@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 .container {
-    padding: 20px; /* Espaçamento interno do container */
+    padding: 20px 0; /* Reduz o espaçamento interno do container */
 }
 
 .row {
@@ -70,9 +70,8 @@ nav a:hover {
 .main {
     display: flex; /* Usa flexbox para o layout das metades */
     width: 100%; /* Garante que o container principal ocupe toda a largura */
-    min-height: 100vh; /* Garante que o container principal ocupe toda a altura da tela */
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha verticalmente ao topo */
 }
 
 .half {
@@ -86,38 +85,4 @@ nav a:hover {
 }
 
 footer {
-    background-color: #cc9c53; /* Cor de fundo do rodapé */
-    color: #000000; /* Cor do texto do rodapé */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 10px 0; /* Espaçamento interno no rodapé */
-    position: fixed; /* Fixa o rodapé na parte inferior da página */
-    width: 100%; /* O rodapé ocupa toda a largura da página */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    bottom: 0; /* Posiciona o rodapé na parte inferior da página */
-}
-
-@media screen and (max-width: 1200px) {
-    body {
-        background-size: contain; /* Ajusta a imagem para conter dentro da área de visualização */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        background-size: cover; /* Ajusta a imagem para cobrir toda a área visível */
-        background-position: center; /* Centraliza a imagem */
-    }
-    header {
-        padding: 10px; /* Ajusta o espaçamento interno no cabeçalho em telas menores */
-    }
-    nav {
-        flex-direction: column; /* Alinha os links de navegação em coluna */
-    }
-    nav a {
-        display: block; /* Links de navegação em bloco */
-        text-align: center; /* Centraliza o texto dos links */
-    }
-    .column, .half {
-        flex: 100%; /* Cada coluna/metade ocupa 100% da largura */
-    }
-}
+    background
