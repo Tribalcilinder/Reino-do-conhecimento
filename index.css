@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Enchanted+Land&display=swap');
 
-body {
-    position: fixed;
-    font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+}
+
+body {
+    font-family: 'Enchanted Land', sans-serif; /* Define a fonte 'Enchanted Land' para todo o site */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
     background-image: url(img/bg1.png); /* Caminho da imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área de fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    display: flex;
+    flex-direction: column; /* Faz o layout flexível em coluna */
 }
 
-/* Estilo do cabeçalho */
 header {
     background-color: #cc9c53; /* Cor de fundo do cabeçalho */
     color: #000000; /* Cor do texto do cabeçalho */
@@ -23,7 +27,6 @@ header {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-/* Estilo da navegação */
 nav {
     display: flex; /* Usa flexbox para o layout dos links */
     justify-content: center; /* Centraliza os links horizontalmente */
@@ -33,7 +36,6 @@ nav {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-/* Estilo dos links de navegação */
 nav a {
     color: white; /* Cor do texto dos links */
     padding: 14px 20px; /* Espaçamento interno dos links */
@@ -42,43 +44,42 @@ nav a {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-/* Estilo dos links de navegação ao passar o mouse */
 nav a:hover {
     background-color: #ddd; /* Cor de fundo ao passar o mouse */
     color: black; /* Cor do texto ao passar o mouse */
 }
 
-/* Estilo do container principal */
-.container{
-    display: flex;
-    align-items: flex-start;
+.container {
+    flex: 1; /* Permite que o container principal ocupe o espaço disponível */
     padding: 20px; /* Espaçamento interno do container */
+    display: flex;
+    flex-direction: column; /* Faz o layout flexível em coluna */
+    align-items: flex-start; /* Alinha os itens ao início */
 }
 
-/* Estilo das linhas de conteúdo */
 .row {
     display: flex; /* Usa flexbox para o layout das colunas */
     flex-wrap: wrap; /* Permite que as colunas quebrem linha se necessário */
     margin: 0 -15px; /* Margem negativa para ajustar o espaçamento */
+    align-items: flex-start; /* Alinha as colunas ao topo da linha */
 }
 
-/* Estilo das colunas */
 .column {
-    
     flex: 50%; /* Cada coluna ocupa 50% da largura */
     padding: 15px; /* Espaçamento interno das colunas */
+    align-self: flex-start; /* Garante que as colunas estejam alinhadas ao topo */
 }
 
-/* Estilo do container principal que contém duas metades */
 .main {
     display: flex; /* Usa flexbox para o layout das metades */
     width: 100%; /* Garante que o container principal ocupe toda a largura */
     min-height: 100vh; /* Garante que o container principal ocupe toda a altura da tela */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-/* Estilo das metades */
 .half {
-    display: flex; 
+    display: flex;
     flex-direction: column; /* Alinha itens em coluna */
     align-items: center; /* Centraliza itens horizontalmente */
     justify-content: center; /* Centraliza itens verticalmente */
@@ -87,7 +88,6 @@ nav a:hover {
     color: white; /* Cor do texto dentro das metades */
 }
 
-/* Estilo do rodapé */
 footer {
     background-color: #cc9c53; /* Cor de fundo do rodapé */
     color: #000000; /* Cor do texto do rodapé */
